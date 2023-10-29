@@ -166,21 +166,3 @@ audio::-webkit-media-controls-enclosure {
 .morecurated:hover {
     background-color: #020659;
 }
-
-#playlists {
-    background-color: #2699FB;
-    display: grid;
-    grid-template-columns: 1FR;
-}
-
-#curated {
-    background-color: #030ABC;
-    display: grid;
-    grid-template-columns: 1FR;
-}
-
-#playlists section {
-    background-color: #0D8DFB;
-    display: grid;
-    grid-template-columns: 1FR 1FR;
-}
