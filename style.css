@@ -3,17 +3,15 @@ html {
 }
 
 body {
+    width: 834px;
+    background-color: #ffffff;
     margin: 0 auto;
     font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
-}
-
-header {
-    width: 100%;
 }
 
 h1 {
     font-size: 1.25em;
+    color: #590242;
 }
 
 h2, h3, h4 {
@@ -28,10 +26,15 @@ footer p {
     font-size: .75em;
 }
 
+#smoothjazz {
+    background-color: #590242;
+    padding: 10px;
+    color: #ffffff;
+}
+
 nav {
     display: inline-block;
     width: 100%;
-    list-style-type: none;
     background-color: #030ABC;
     color: #ffffff;
 }
@@ -55,20 +58,16 @@ nav a:hover {
 
 .scroll div {
     position: absolute;
-    top: 231px;
+    top: 230px;
     color: #590242;
     background-color: rgba(255,255,255,.75);
     padding: 5px;
-    height: 70px;
-    width: 300px;
+    height: 71px;
+    width: 301px;
 }
 
 dl {
     display: flex;
-}
-
-dt {
-    padding-right: 5px;
 }
 
 audio {
@@ -135,8 +134,7 @@ audio::-webkit-media-controls-play-button {
     border-radius: 50%;
 }
 audio::-webkit-media-controls-enclosure {
-    background-color: #ffffff;
-    opacity: 0.5;
+    background: #2699FB;
 }
 
 .all {
@@ -179,4 +177,10 @@ audio::-webkit-media-controls-enclosure {
     background-color: #030ABC;
     display: grid;
     grid-template-columns: 1FR;
+}
+
+#playlists section {
+    background-color: #0D8DFB;
+    display: grid;
+    grid-template-columns: 1FR 1FR;
 }
