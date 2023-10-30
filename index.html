@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MuzakMaker</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>MuzakMaker- Smooth Jazz</title>
 </head>
-
 <body>
+
     <header>
         <nav>
+            <h2><span style="display: none;">Main Navigation</span></h2>
+            <input type="checkbox" id="dropdown" />
+            <label for="dropdown"><span></span></label>
             <ul>
-                <li><a href="#home"><span style="font-variant: small-caps;">MuzakMaker</span></a></li> 
-                <li><a href="#trending">TRENDING SONGS</a></li>
-                <li><a href="#playlists">YOUR PLAYLISTS</a></li>
-                <li><a href="#curated">CURATED PLAYLISTS</a></li>
-                <li><a href="#user"><img src="content/duke-silver.png" alt="user profile picture"></a></li>
+              <li><h1><a href="#home"><span style="font-variant: small-caps";>MuzakMaker</span></a></h1></li>
+              <li><a href="#trending">Trending <br />Songs</a></li>
+              <li><a href="#playlists">Your  <br />Playlists</a></li>
+              <li><a href="#curated">Curated  <br />Playlists</a></li>
+              <li><a href="user"><img src="content/duke-silver.png" alt="user profile picture"></a></li>
             </ul>
         </nav>
+
+        <section id="smoothjazz">
+        <h1>SMOOTH JAZZ</h1></br>
+        <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+        </section>
+
     </header>
 
     <main>
-        <section id="smoothjazz">
-            <h2>SMOOTH JAZZ</h2>
-            <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented
-                crossover jazz became dominant in the 1980s and early 1990s.</p>
-        </section>
 
         <section id="trending">
             <h3>TRENDING SONGS</h3>
@@ -114,80 +119,90 @@
 
             </div>
 
-            <button class="more" type="button"><a href="#">More trending</a></button>
+            <a class="button" href="#">More trending</a>
 
         </section>
 
-        <section id="playlists">
+        <section class="spacing">
+
             <h3>YOUR PLAYLISTS</h3>
-            <aricle>
-                <img src="content/best-of-2020-cover.png" alt="number 2020 in flames on black background">
-                <h4>BEST OF 2020</h4>
-                <p>The music that got you through the lock down.</p>
-            </aricle>
 
-            <article>
-                <img src="content/pumpkin-spice-cover.png" alt="pumpkin spice latte on wood table">
-                <h4>PUMPKIN SPICE</h4>
-                <p>Creamy and spicy, just like your favorite autumnal latte.</p>
-            </article>
+            <section id="playlists">
+                <section id="best">
+                    <img src="content/best-of-2020-cover.png" alt="number 2020 in flames on black background">
+                    <h4>BEST OF 2020</h4>
+                    <p>The music that got you through the lock down.</p>
+                </section>
 
-            <article>
-                <img src="content/quiet-storm-cover.png" alt="storm clouds with pink lightning">
-                <h4>QUIET STORM</h4>
-                <p>Slow tempos and relaxed rhythms. </p>
-            </article>
+                <section id="spice">
+                    <img src="content/pumpkin-spice-cover.png" alt="pumpkin spice latte on wood table">
+                    <h4>PUMPKIN SPICE</h4>
+                    <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                </section>
 
-            <article>
-                <img src="content/smooth-jazz-cover.png" alt="musician on gray background">
-                <h4>SMOOTH JAZZ</h4>
-                <p>The pioneers of smooth jazz</p>
-            </article>
+                <section id="storm">
+                    <img src="content/quiet-storm-cover.png" alt="storm clouds with pink lightning">
+                    <h4>QUIET STORM</h4>
+                    <p>Slow tempos and relaxed rhythms. </p>
+                </section>
 
-            <article>
-                <img src="content/smooth-study-cover.png" alt="person wearing yellow sweater sitting at a desk working on a computer">
-                <h4>SMOOTH STUDY</h4>
-                <p>Background music to keep you going while you study. </p>
-            </article>
+                <section id="jazz">
+                    <img src="content/smooth-jazz-cover.png" alt="musician on gray background">
+                    <h4>SMOOTH JAZZ</br></h4>
+                    <p>The pioneers of smooth jazz</p>
+                </section>
 
-            <button class="all" type="button"><a href="#">All your playlists</a></button>
+                <section id="study">
+                    <img src="content/smooth-study-cover.png" alt="person wearing yellow sweater sitting at a desk working on a computer">
+                    <h4>SMOOTH STUDY</h4>
+                    <p>Background music to keep you going while you study. </p>
+                </section>
+
+            </section>
+
+            <a class="button" href="#">All your playlists</a>  
 
         </section>
 
-        <section id="curated">
+        <section class="spacing">
+
             <h3>CURATED PLAYLISTS</h3>
+    
+            <section id="curated">
 
-            <article>
-                <img src="content/boozy-brunch-cover.png" alt="friends cheering with drinks">
-                <h4>BOOZY BRUNCH</h4>
-                <p>Light up the afternoon with these energetic hits. </p>
-            </article>
+                <section>
+                    <img src="content/boozy-brunch-cover.png" alt="friends cheering with drinks">
+                    <h4>BOOZY BRUNCH</h4>
+                    <p>Light up the afternoon with these energetic hits. </p>
+                </section>
 
-            <article>
-                <img src="content/dinner-party-cover.png" alt="candlelit table set with a variety of food">
-                <h4>DINNER PARTY</h4>
-                <p>Background music to give your party life, but allow your guests to chat. </p>
-            </article>
+                <section>
+                    <img src="content/dinner-party-cover.png" alt="candlelit table set with a variety of food">
+                    <h4>DINNER PARTY</h4>
+                    <p>Background music to give your party life, but allow your guests to chat. </p>
+                </section>
 
-            <article> 
-                <img src="content/mellow-cover.png" alt="two people sitting on a park beach looking at autumn-colored leaves">
-                <h4>MELLOW</h4>
-                <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
-            </article>
+                <section> 
+                    <img src="content/mellow-cover.png" alt="two people sitting on a park beach looking at autumn-colored leaves">
+                    <h4>MELLOW</h4>
+                    <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                </section>
 
-            <article>
-                <img src="content/jazz-chill-cover.png" alt="red rose petals">
-                <h4>JAZZ AND CHILL</h4>
-                <p>Set the mood with these silky sounds.</p>
-            </article>
+                <section>
+                    <img src="content/jazz-chill-cover.png" alt="red rose petals">
+                    <h4>JAZZ AND CHILL</h4>
+                    <p>Set the mood with these silky sounds.</p>
+                </section>
 
-            <article>
-                <img src="content/smooth-saxophone-cover.png" alt="musicians playing saxophones">
-                <h4>JAZZ SAXOPHONE</h4>
-                <p>The greatest collection of your sax favorites.</p>
-            </article>
+                <section>
+                    <img src="content/smooth-saxophone-cover.png" alt="musicians playing saxophones">
+                    <h4>JAZZ SAXOPHONE</h4>
+                    <p>The greatest collection of your sax favorites.</p>
+                </section>
+                
+            </section>
 
-            <button class="morecurated" type="button"><a href="#">More curated playlists</a></button>
+            <a class="button" href="#">More curated</a>  
 
         </section>
 
