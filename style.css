@@ -343,7 +343,6 @@ audio::-webkit-media-controls-enclosure {
     }
     #play-wrapper, #curated-wrapper {
         display: block;
-        justify-content: center;
         width: 50%;
     }
     #play-wrapper {
@@ -357,14 +356,15 @@ audio::-webkit-media-controls-enclosure {
         flex-direction: column;
         overflow-y: scroll;
         height: 500px;
+        align-items: center;
     }
     .playlists section, .curated section {
         display: grid;
-        grid-template-columns: 1FR 1FR 1FR;
+        grid-template-columns: 1FR 1FR;
     }
     .playlists h4, .playlists p, .curated h4, .curated p {
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 3;
     }
     .button {
         clear: both;
