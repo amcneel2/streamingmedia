@@ -46,7 +46,6 @@ table {
     border-spacing: 0;
 }
 
-
 html {
     background-color: #020659;
 }
@@ -73,6 +72,10 @@ nav a {
     color: #ffffff;
 }
 
+nav h2 {
+    display: hidden;
+}
+
 h1 {
     font-size: 1.25em;
     color: #ffffff;
@@ -83,6 +86,8 @@ h2, h3 {
     font-size: 1em;
     color: #590242;
     font-weight: bold;
+    margin-top: 15px;
+    padding-left: 5px;
 }
 
 h4 {
@@ -99,7 +104,12 @@ footer {
     text-align: center;
     color: #590242;
     margin-top: 40px;
+    padding-top: 20px;
     padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.75em;
 }
 
 #smoothjazz {
@@ -140,13 +150,16 @@ footer {
     overflow-y: hidden;
 }
 
-#playlists > section {
-    padding: 5px;
+#playlists section {
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
     background-color: #0D8DFB;
+
 }
 
-#curated > section {
-    padding: 5px;
+#curated section {
+    padding: 10px;
+    margin: 20px 5px 20px 5px;
     background-color: #020659;
 }
 
@@ -198,7 +211,8 @@ audio {
     width: 150px;
     display: block;
     text-align: center;
-    margin: 10px 0 30px 32px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .button:hover {
@@ -218,17 +232,17 @@ audio {
 #trending ::-webkit-scrollbar-thumb:hover {
     background: #020659;
 }
-#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+.play-wrapper ::-webkit-scrollbar, .curated-wrapper ::-webkit-scrollbar {
     width: 15px;
 }
-#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+.play-wrapper ::-webkit-scrollbar-track, .curated-wrapper ::-webkit-scrollbar-track  {
     box-shadow: inset 0 0 15px #020659;
 }
-#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+.play-wrapper ::-webkit-scrollbar-thumb, .curated-wrapper ::-webkit-scrollbar-thumb {
     background: #020659;
     border-radius: 5px;
 }
-#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+.play-wrapper ::-webkit-scrollbar-thumb:hover, .curated-wrapper ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
 }
 
@@ -323,6 +337,33 @@ audio::-webkit-media-controls-enclosure {
     }
     .button {
         float: right;
-        position: relative;
+        margin: 5px;
+    }
+    .play-wrapper, .curated-wrapper {
+        display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    .play-wrapper {
+        float: left;
+    }
+    .curated-wrapper{
+        float: right;
+    }
+    #playlists, #curated {
+        display: block;
+        overflow-y: scroll;
+        height: 500px;
+    }
+    #playlists section, #curated section {
+        display: flex;
+
+    }
+    .button {
+        clear: both;
+    }
+    footer {
+        clear: both;
     }
 }
