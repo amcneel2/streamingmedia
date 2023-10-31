@@ -74,6 +74,9 @@ nav a {
     text-decoration: none;
     color: #ffffff;
 }
+nav a:hover {
+    color: #590242;
+}
 
 h1 {
     font-size: 1.25em;
