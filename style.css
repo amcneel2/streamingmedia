@@ -46,6 +46,9 @@ table {
     border-spacing: 0;
 }
 
+
+
+
 html {
     background-color: #020659;
 }
@@ -123,7 +126,6 @@ footer p {
     background-color: #2699FB;
     color: #ffffff;
     text-align: center;
-    line-height: 1.15em;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -155,7 +157,7 @@ footer p {
 
 .curated section {
     padding: 10px;
-    margin: 20px 5px 20px 5px;
+    margin: 10px 5px 10px 5px;
     background-color: #020659;
 }
 
@@ -340,8 +342,7 @@ audio::-webkit-media-controls-enclosure {
         margin: 5px;
     }
     #play-wrapper, #curated-wrapper {
-        display: flexbox;
-        flex-direction: column;
+        display: block;
         justify-content: center;
         width: 50%;
     }
@@ -352,12 +353,18 @@ audio::-webkit-media-controls-enclosure {
         float: right;
     }
     .playlists, .curated {
-        display: block;
+        display: flex;
+        flex-direction: column;
         overflow-y: scroll;
         height: 500px;
     }
     .playlists section, .curated section {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1FR 1FR 1FR;
+    }
+    .playlists h4, .playlists p, .curated h4, .curated p {
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
     .button {
         clear: both;
