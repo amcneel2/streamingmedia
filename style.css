@@ -363,11 +363,20 @@ audio::-webkit-media-controls-enclosure {
         grid-template-columns: 1FR 1FR;
         grid-template-rows: 1FR;
     }
+    .playlists img, .curated img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
     .playlists h4, .playlists p, .curated h4, .curated p {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
+    }
+    .playlists p, .curated p {
+        position: relative;
+        z-index: 1000;
+        top: 25px;
     }
     .button {
         clear: both;
